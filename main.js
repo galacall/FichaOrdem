@@ -10,11 +10,19 @@ class Personagem{
 }
 class Ficha{
     mostrarConfigFicha(perso){
-	console.log(perso.nome);
-	console.log(perso.agilidade);
-    console.log(perso.forca);
-    console.log(perso.intelecto);
-    console.log(perso.presenca);
-    console.log(perso.vigor);
+        console.log("Nome: "+perso.nome);
+        console.log(perso.agilidade);
+        console.log(perso.forca);
+        console.log(perso.intelecto);
+        console.log(perso.presenca);
+        console.log(perso.vigor);
     }
 }
+
+let ocultista = new Personagem("Alice Gutierrez", 2, 0, 3, 3, 2);
+let combatente = new Personagem("Lucas Catarino", 4, 1, 2, 2, 1);
+
+let f = new Ficha();
+
+f.mostrarConfigFicha(ocultista);
+f.mostrarConfigFicha(combatente);
