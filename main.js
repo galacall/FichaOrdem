@@ -1,4 +1,5 @@
 class Personagem{
+
     constructor(nome, agilidade,forca,intelecto,presenca,vigor,nex){
         this.nome = nome;
         this.agilidade = agilidade;
@@ -9,6 +10,7 @@ class Personagem{
         this.nex = nex;
     }
 }
+
 class Ficha{
     mostrarConfigFicha(perso){
         console.log("Nome: "+perso.nome);
@@ -31,3 +33,4 @@ let f = new Ficha();
 f.mostrarConfigFicha(aliceocultista);
 f.mostrarConfigFicha(lucascombatente);
 f.mostrarConfigFicha(abigailcombatente);
+
